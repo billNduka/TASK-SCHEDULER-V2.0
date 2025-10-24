@@ -9,7 +9,7 @@ export default function TaskCard({ task }:TaskCardProps ) {
    const due = task.due_date ? new Date(task.due_date).toLocaleString() : "No due date";
 
    return (
-    <div className="bg-black shadow-md rounded-2xl p-4 mb-3 w-full max-w-md">
+    <div className="bg-stone-700 shadow-md rounded-2xl p-4 mb-3 w-full max-w-md">
       <div className="flex justify-between items-center mb-2">
         <h2 className="text-xl font-semibold">{task.title}</h2>
         <span
